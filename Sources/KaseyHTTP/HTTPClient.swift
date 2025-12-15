@@ -1,5 +1,5 @@
 import Foundation
 
-public protocol HTTPClient: Sendable {
+public protocol HTTPClient {
     func send(_ request: HTTPRequestable) async throws -> HTTPResponse
 }
